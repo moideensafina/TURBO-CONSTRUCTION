@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux"
 import { loadPackage } from "../actions/projectAction"
 import { useEffect } from "react"
-import MetaData from "./layouts/MetaData";
 
 export default function Service() {
 const dispatch = useDispatch()
@@ -13,7 +12,7 @@ const dispatch = useDispatch()
     },[dispatch])
     return(
         <>
-        <MetaData tittle={"Service"} />
+        
         <section className="about-home">
             <h2 className="about-home-heading">Turbo House Construction</h2>
             <p className="about-home-para">

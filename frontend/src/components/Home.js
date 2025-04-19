@@ -1,5 +1,4 @@
 import { Fragment, useEffect } from "react";
-import MetaData from "./layouts/MetaData";
 import { useDispatch, useSelector } from "react-redux";
 import { getProject } from "../actions/projectAction";
 import Loader from "./layouts/Loader";
@@ -15,7 +14,6 @@ export default function Home() {
     },[dispatch])
     return(
         <Fragment>{loading?<Loader/>: <Fragment>
-            <MetaData tittle={"Home"} />
                 <section className="home">
         <h1 className="home-content">TURBO CONSTRUCTION COMPANY IS THE BEST CONSTRUCTION COMPANY IN THE TAMILNADU</h1>
     </section>

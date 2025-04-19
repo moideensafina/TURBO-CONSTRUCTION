@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
 import { getProject } from "../actions/projectAction"
-import MetaData from "./layouts/MetaData";
 import { Fragment, useEffect } from "react";
 import Loader from "./layouts/Loader";
 
@@ -19,7 +18,7 @@ export default function Projects() {
     <Fragment>
         {loading?<Loader/>:
         <Fragment>
-        <MetaData tittle={"Projects"} />
+        
         <section className="projects" >
                 <div className="container">
                     <h2>Our Projects</h2>

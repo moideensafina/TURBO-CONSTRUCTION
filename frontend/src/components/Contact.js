@@ -1,9 +1,9 @@
-import MetaData from "./layouts/MetaData";
+
 
 export default function Contact() {
     return(
         <>
-        <MetaData tittle={"Contact"} />
+        
         <section className="contact">
           <div>
             <div className="contact-btns">

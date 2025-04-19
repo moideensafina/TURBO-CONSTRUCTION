@@ -1,7 +1,6 @@
 import { useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
 import { login } from '../actions/userAction';
-import MetaData from './layouts/MetaData'
 import { useLocation, useNavigate } from 'react-router-dom';
 import './Login.css'
 
@@ -29,7 +28,7 @@ export default function Login() {
             },[isAuthenticated,dispatch,navigate,redirect])
     return(
         <>
-        <MetaData tittle={"Login"} />
+        
         <div className="login-container">
       <div className="wrapper">
         <div className="title"><span>Login Form</span></div>

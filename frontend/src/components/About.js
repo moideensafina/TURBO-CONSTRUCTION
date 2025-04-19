@@ -1,9 +1,6 @@
-import MetaData from "./layouts/MetaData";
-
 export default function About() {
     return(
         <>
-        <MetaData tittle={"About"} />
         <section className="services-home">
             <h2>About us</h2>
             <div className="services">

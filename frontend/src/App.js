@@ -1,7 +1,6 @@
 
 import {Route,BrowserRouter as Router ,Routes } from 'react-router-dom';
 import Header from './components/layouts/Header';
-import {HelmetProvider} from 'react-helmet-async';
 import './App.css';
 import store from './store'
 import Home from './components/Home';
@@ -31,7 +30,6 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <HelmetProvider>
         <Header/>
         <ToastContainer theme='dark'/>
         <Routes>
@@ -48,7 +46,6 @@ function App() {
           <Route path='/admin/package/:id' element={ <ProtectedRoute ><UpdatePackage/> </ProtectedRoute> } />
         </Routes>
         <Footer/>
-      </HelmetProvider>
       </div>
     </Router>
   );
